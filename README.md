@@ -5,7 +5,7 @@ Everything is a map!
 ## API
 `map(key, val)` Creates a map
 
-`search(root-map-object, path-varargs)` Finds a nested value by path within root object. Returns empty map instead of null!
+`search(root-map-object, path-varargs)` Finds a nested value by path within root object.
 
 `set(root-map-object, value, MapUtils.replaceFn, path-varargs)` Replaces a nested value by path within root object. Creates empty map on its path if key is absent.
 
