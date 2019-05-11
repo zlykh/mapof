@@ -50,10 +50,6 @@ Function to drop item from inventory
 ~~~~
     public void drop(Object cardId, Object itemInstanceId) {
         var cardObj = cardRefService.get(cardId);
-        if (isTrading(cardObj)) {
-            log.error("Can't drop while trading");
-            return;
-        }
 
         var itemWidExisting = search(cardObj, Card.storage, Storage.inventory, itemInstanceId);
         if (itemWidExisting == null) {
